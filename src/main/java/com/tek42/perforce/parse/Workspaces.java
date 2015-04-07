@@ -156,7 +156,8 @@ public class Workspaces extends AbstractPerforceTemplate {
                     cmdLineList.add("-f");
                 if(populateOnly)
                     cmdLineList.add("-p");
-                cmdLineList.add("--parallel threads=10,min=1,minsize=1");
+                cmdLineList.add("--parallel");
+                cmdLineList.add("threads=10,min=1,minsize=1");
                 cmdLineList.add(path);
                 String[] cmdLine = cmdLineList.toArray(new String[cmdLineList.size()]);
 		
